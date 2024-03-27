@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2152a39eb0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="./images/pixil-frame-0.png" />
+    <title>Casa de Câmbio</title>
+  </head>
+  <body>
+    <header>
+      <div class="title-container">
+        <h1 class="title">&nbsp;Casa de Câmbio&nbsp;</h1>
+      </div>
+    </header>
+    <main>
+      <div class="box-header">
+        <div class="search-box">
+          <input type="text" id="currency-input" class="currency-input" />
+          <button id="get-currency-btn" class="get-currency-btn">
+            Pesquisar
+          </button>
+        </div>
+        <div class="exchange-rate-box">
+          <h2>Converter</h2>
+          <input id="currency-amount-input" type="number" min="0" />
+          <select id="currency-1"></select>
+          <h2>para</h2>
+          <select id="currency-2"></select>
+          <button id="swap-currencies-btn">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          </button>
+          <button id="convert-currency-btn">Converter</button>
+        </div>
+      </div>
+      <div class="box-conversion-result"></div>
+      <div class="separator"></div>
+      <div id="currency-container">
+        <h2 class="currency-title"></h2>
+        <ul class="currency-chart"></ul>
+      </div>
+    </main>
+    <div id="app"></div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

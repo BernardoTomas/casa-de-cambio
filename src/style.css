@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Sometype Mono", monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+      180deg, 
+    rgba(15, 15, 15, 0.6),
+    rgba(15, 15, 15, 0.7),
+    rgba(15, 15, 15, 0.8),
+    rgba(15, 15, 15, 0.9),
+    rgba(15, 15, 15, 1)
+    ),
+    linear-gradient(
+      0deg, 
+    rgba(15, 15, 15, 0.6),
+    rgba(15, 15, 15, 0.7),
+    rgba(15, 15, 15, 0.8),
+    rgba(15, 15, 15, 0.9),
+    rgba(15, 15, 15, 1)
+    ),
+    url('../images/cambio-pattern-bg.png');
+  background-size: 10%;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(9, 9, 10);
+}
+
+h2 {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.title-container {
+  align-items: center;
+  background-image: linear-gradient(
+    90deg, 
+    rgba(224, 157, 0, 0),
+    rgba(224, 130, 0, 0.5),
+    rgb(224, 90, 0),
+    rgba(224, 130, 0, 0.9),
+    rgba(224, 130, 0, 0.8),
+    rgba(224, 130, 0, 0.7),
+    rgba(224, 157, 0, 0.6),
+    rgba(224, 157, 0, 0.5),
+    rgba(224, 157, 0, 0.3),
+    rgba(224, 157, 0, 0)
+    );
+  display: flex;
+  height: 2px;
+  margin: 63px;
+  width: 700px;
+}
+
+.title {
+  background-color: rgb(9, 9, 10);
+  color: white;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin-left: 80px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(47, 47, 53);
+  border-radius: 16px;
+  margin: 40px;
+  width: 80%;
+}
+
+.box-header {
+  background-color: rgb(9, 9, 10);
+  border-radius: 16px 16px 0 0;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+button, input {
+    border: none;
+    border-radius: 10px;
+    line-height: 40px;
+    padding-left: 8px;
+    font-size: 20px; 
+}
+
+.currency-input, #currency-amount-input {
+  border-radius: 10px 0 0 10px;
+}
+
+.get-currency-btn, #convert-currency-btn {
+  background-color: rgb(224, 137, 0);
+  border-radius: 0 10px 10px 0;
+  padding: 0 16px;
+  margin-left: -10px;
+}
+
+.exchange-rate-box {
+  align-items: center;
+  color: white;
+  display: flex;
+  margin-top: 32px;
+}
+
+.exchange-rate-box > * {
+  margin-right: 16px;
+}
+
+#currency-amount-input {
+  margin: 0;
+}
+
+#swap-currencies-btn {
+  line-height: 34px;
+  border: 3px solid rgb(224, 137, 0);
+  color: rgb(224, 137, 0);
+  padding: 0 16px;
+}
+
+#convert-currency-btn {
+  border-radius: 10px;
+  margin-left: 0px;
+}
+
+/*-------------------Classes for customizing select and option-------------------*/
+
+select, option {
+  height: 40px;
+  font-size: 20px;
+}
+
+select {
+  background-color: rgb(224, 137, 0);
+  padding: 0 16px;
+}
+
+select, select:focus {
+  border: none;
+}
+
+option {
+  background-color: white;
+}
+
+#currency-1 {
+  border-radius: 0 10px 10px 0;
+}
+
+#currency-2 {
+  border-radius: 10px;
+}
+
+/*-------------------End of classes for customizing select and option-------------------*/
+
+.box-conversion-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+.box-conversion-result>* {
+  padding: 0 8px;
+}
+
+.unit {
+  color: black;
+}
+
+.amount {
+  color: rgb(224, 130, 0);
+}
+
+.separator {
+  align-self: center;
+  height: 2px;
+  background-image: linear-gradient(
+    90deg, 
+    rgba(224, 157, 0, 0),
+    rgba(224, 157, 0, 0.3),
+    rgba(224, 157, 0, 0.5),
+    rgba(224, 157, 0, 0.6),
+    rgba(224, 130, 0, 0.7),
+    rgba(224, 130, 0, 0.8),
+    rgba(224, 130, 0, 0.9),
+    rgb(224, 90, 0),
+    rgba(224, 130, 0, 0.9),
+    rgba(224, 130, 0, 0.8),
+    rgba(224, 130, 0, 0.7),
+    rgba(224, 157, 0, 0.6),
+    rgba(224, 157, 0, 0.5),
+    rgba(224, 157, 0, 0.3),
+    rgba(224, 157, 0, 0)
+    );
+  width: 80%;
+}
+
+.currency-chart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+.currency-li {
+  align-items: center;
+  background-color: rgb(32, 32, 37);
+  border-radius: 10px;
+  display: flex;
+  margin: 8px;
+  padding: 16px 24px;
+  width: 150px;
+}
+
+.currency-name {
+  color: white;
+  font-weight: 800;
+  padding-left: 8px;
+}
+
+.currency-value {
+  color: rgb(224, 130, 0);
+  padding-left: 16px;
+}
