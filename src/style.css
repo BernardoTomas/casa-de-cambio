@@ -72,14 +72,14 @@ main {
   display: flex;
   flex-direction: column;
   background-color: rgb(47, 47, 53);
-  border-radius: 16px;
+  border-radius: 10px;
   margin: 40px;
   width: 80%;
 }
 
 .box-header {
   background-color: rgb(9, 9, 10);
-  border-radius: 16px 16px 0 0;
+  border-radius: 10px 10px 0 0;
   display: flex;
   flex-direction: column;
   padding: 40px;
@@ -87,19 +87,19 @@ main {
 
 button, input {
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     line-height: 40px;
     padding-left: 8px;
     font-size: 20px; 
 }
 
 .currency-input, #currency-amount-input {
-  border-radius: 10px 0 0 10px;
+  border-radius: 5px 0 0 5px;
 }
 
 .get-currency-btn, #convert-currency-btn {
   background-color: rgb(224, 137, 0);
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 5px 5px 0;
   padding: 0 16px;
   margin-left: -10px;
 }
@@ -127,7 +127,7 @@ button, input {
 }
 
 #convert-currency-btn {
-  border-radius: 10px;
+  border-radius: 5px;
   margin-left: 0px;
 }
 
@@ -152,11 +152,11 @@ option {
 }
 
 #currency-1 {
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 5px 5px 0;
 }
 
 #currency-2 {
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /*-------------------End of classes for customizing select and option-------------------*/
@@ -214,7 +214,7 @@ option {
 .currency-li {
   align-items: center;
   background-color: rgb(32, 32, 37);
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   margin: 8px;
   padding: 16px 24px;

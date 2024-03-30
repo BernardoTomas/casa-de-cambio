@@ -32,14 +32,18 @@
         </div>
         <div class="exchange-rate-box">
           <h2>Converter</h2>
-          <input id="currency-amount-input" type="number" min="0" />
+          <input
+            id="currency-amount-input"
+            type="number"
+            min="0"
+            placeholder="1"
+          />
           <select id="currency-1"></select>
-          <h2>para</h2>
-          <select id="currency-2"></select>
           <button id="swap-currencies-btn">
             <i class="fa-solid fa-arrow-right-arrow-left"></i>
           </button>
-          <button id="convert-currency-btn">Converter</button>
+          <select id="currency-2"></select>
+          <button id="convert-currency-btn">Fazer Conversão</button>
         </div>
       </div>
       <div class="box-conversion-result"></div>
