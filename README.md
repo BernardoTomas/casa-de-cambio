@@ -1,12 +1,10 @@
 # Casa de Câmbio
 https://physical-family.surge.sh/
 
-#### Um app de câmbio feito com vanilla JS.
-Para usar localmente só clonar o repositório, e "npm install" no terminal aberto dentro do repositório clonado.
-<br>
-"npm run dev" para abrir no browser. Precisa de node instalado na máquina.
-
-#### An app for getting exchange rates made with vanilla JS.
+#### An app for getting exchange rates made with vanilla JS and CSS.
 To run it locally clone the repository, and input "npm install" in the terminal opened in the cloned folder.
 <br>
 "npm run dev" to open in browser. You need node installed in your machine.
+
+Consumes a free API (https://www.exchangerate-api.com/) to show currencies and their respective exchange rates with one another.
+Look up any currency by its acronym (i.e: instead of "US Dollar" write "USD") to see exchange rates with other currencies.
